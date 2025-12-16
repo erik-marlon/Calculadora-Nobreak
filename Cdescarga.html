@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corrente de Descarga</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<header><img src="src/img/logo.png" alt="logo"></header>
+<body>
+    <h1>Corrente de Descarga</h1>
+    <div class="itens">
+        <label for="potconsumida">Potência Consumida</label>
+        <input type="number" name="potconsumida" id="potconsumida" class="input-div">
+    </div>
+    <div class="itens">
+        <label for="Tensaobat">Tensão de Bateria</label>
+        <input type="number" name="Tensaobat" id="Tensaobat" class="input-div">
+    </div>
+    <div class="itens" id="res3">
+        <label>Corrente de Descarga: </label>
+        <span id="valorRes3"></span>
+    </div>
+    <div class="itens">
+        <label for="botao"></label>
+        <div class="divbotao"><input class="botao" type="button" value="Calcular" onclick="calcularCdescarga()"></div>
+    </div>
+    <script src="src/app.js"></script>
+</body>
+</html>

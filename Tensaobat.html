@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tensão de Bateria</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<header>
+    <img src="src/img/logo.png" alt="logotipo">
+</header>
+<body>
+    <h1>Tensão de Bateria</h1>
+    <div class="itens">
+        <label for="Qbaterias">Quantidades de baterias</label>
+        <input type="number" name="Qbaterias" id="Qbaterias" class="input-div">
+    </div>
+    <div class="itens" id="res2">
+        <label>Tensão de Bateria: </label>
+        <span id="valorRes2"></span>
+    </div>
+    <div class="itens">
+        <label for="botao"></label>
+        <div class="divbotao"><input class="botao" type="button" value="Calcular" onclick="calcularTensaobat()">
+        </div>
+    </div>
+    <script src="src/app.js"></script>
+</body>
+</html>
