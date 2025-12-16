@@ -1,28 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Logmaster</title>
-    <link rel="stylesheet" href="inicial.css">
+    <link rel="stylesheet" href="src/style.css">
 </head>
 <header>
     <img src="src/img/logo.png" alt="logotipo">
 </header>
 <body>
-    <div class="grade">
-        <a class="botoes" href="">
-        <img class="botao" src="src/img/pot.jpg" alt="Potência Consumida">    
-        </a>
-        <a class="botoes" href="">
-        <img class="botao" src="src/img/bat.jpg" alt="Tensão de Bateria">    
-        </a>
-        <a class="botoes" href="">
-        <img class="botao" src="src/img/corrente.jpg" alt="Corrente de Descarga">    
-        </a>
-        <a class="botoes" href="">
-        <img class="botao" src="src/img/autonomia.jpg" alt="Autonomia">    
-        </a>
+    <h1>Calculadora Logmaster</h1>
+    <a href="inicial.html">incial</a>
+    <div class="itens">
+        <label for="potnb">Potência do Nobreak (kVA)</label>
+        <input type="number" name="potnb" id="potnb" class="input-div">
     </div>
+    <div class="itens">
+        <label for="Pcargasaida">Carga na Saida (%)</label>
+        <input type="number" name="Pcargasaida" id="Pcargasaida" class="input-div">
+    </div>
+    <div class="itens">
+        <label for="FPsaida">FP de Saída</label>
+        <input type="number" name="FPsaida" id="FPsaida" class="input-div">
+    </div>
+    <div class="itens">
+        <label for="inversor">Rendimento do Inversor (%)</label>
+        <input type="number" name="inversor" id="inversor" class="input-div">
+    </div>
+    <div class="itens">
+        <label for="Qbaterias">Quantidades de baterias</label>
+        <input type="number" name="Qbaterias" id="Qbaterias" class="input-div">
+    </div>
+    <div class="itens">
+        <label for="correnteCAT">Corrente Catálogo (Ah)</label>
+        <input type="number" name="correnteCAT" id="correnteCAT" class="input-div">
+    </div>
+    <div class="itens">
+        <label for="tempoCAT">Tempo Catálogo (Minutos)</label>
+        <input type="number" name="tempoCAT" id="tempoCAT" class="input-div">
+    </div>
+    <div class="itens" id="res1">
+        <label>Potência Consumida: </label>
+        <span id="valorRes1"></span>
+    </div>
+    <div class="itens" id="res2">
+        <label>Tensão de Bateria: </label>
+        <span id="valorRes2"></span>
+    </div>
+    <div class="itens" id="res3">
+        <label>Corrente de Descarga: </label>
+        <span id="valorRes3"></span>
+    </div>
+    <div class="itens" id="res4">
+        <label>Minutos @ Corrente: </label>
+        <span id="valorRes4"></span>
+    </div>
+    <div class="itens">
+        <label for="botao"></label>
+        <div class="divbotao"><input class="botao" type="button" value="Calcular" onclick="calcularPot()">
+    </div>
+    <script src="src/app.js"></script>
 </body>
-</html>
+</html> 
