@@ -7,16 +7,19 @@
 header {
     background-color: rgb(60, 45, 115);
 }
-img {
-    width: 280px;
-    margin: 10px;
+.grade {
+    display: grid;
+    gap: 25px;
+    width: max-content;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
 }
 .botoes {
     display: flex;
     gap: 10px;
 }
 .botao {
-    width: 250px;
+    width: 240px;
 }
 @media (max-width: 600px) {
 .botao {
