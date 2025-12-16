@@ -10,12 +10,12 @@ header {
     background-color: rgb(60, 45, 115);
 }
 img {
-        width: 280px;
+    width: 280px;
     margin: 10px;
 }
 .grade {
     display: grid;
-    gap: 25px;
+    gap: 15px;
     width: max-content;
     grid-template-columns: repeat(2, 1fr);
     margin: 0 auto;

@@ -6,7 +6,7 @@ function calcularPotconsumida() {
 
         var Potconsumida = (potnb * Pcargasaida * FPsaida) / inversor
 
-        document.querySelector('#valorRes1').innerText = Potconsumida.toFixed(2) + " W"
+        document.querySelector('#valorRes1').innerText = "Potência Consumida: " + Potconsumida.toFixed(2) + " W"
 }
 
 function calcularTensaobat() {
@@ -14,7 +14,7 @@ function calcularTensaobat() {
 
         var Tensaobat = Qbaterias * 12
         
-        document.querySelector('#valorRes2').innerText = Tensaobat + " V"
+        document.querySelector('#valorRes2').innerText =  "Tensão de Bateria: " + Tensaobat + " V"
 }
 
 function calcularCdescarga() {
@@ -23,7 +23,7 @@ function calcularCdescarga() {
 
         var Cdescarga = (potconsumida * 1000) / Tensaobat
 
-        document.querySelector('#valorRes3').innerText = Cdescarga.toFixed(2) + " A"
+        document.querySelector('#valorRes3').innerText = "Corrente de Descarga: " + Cdescarga.toFixed(2) + " A"
 }
 
 function calcularAutonomia() {
@@ -31,7 +31,7 @@ function calcularAutonomia() {
         var correnteCAT = Number(document.querySelector('#correnteCAT').value)                      
         var tempoCAT = Number(document.querySelector('#tempoCAT').value)
 
-        var minutoscorrente = (correnteCAT / Cdescarga) * tempoCAT
+        var minutoscorrente = "Minutos @ Corrente: " + (correnteCAT / Cdescarga) * tempoCAT
         
-        document.querySelector('#valorRes4').innerText = minutoscorrente.toFixed(2)
+        document.querySelector('#valorRes4').innerText = minutoscorrente
 }
