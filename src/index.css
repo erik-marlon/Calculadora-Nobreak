@@ -15,7 +15,7 @@ img {
 }
 .grade {
     display: grid;
-    gap: 15px;
+    gap: 10px;
     width: max-content;
     grid-template-columns: repeat(2, 1fr);
     margin: 0 auto;
