@@ -9,7 +9,7 @@ header {
     justify-content: center;
     background-color: rgb(60, 45, 115);
 }
-img {
+.logo {
     width: 280px;
     margin: 10px;
 }
@@ -25,7 +25,10 @@ img {
     gap: 10px;
 }
 .botao {
-    width: 240px;
+    width: 280px;
+    margin: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
 }
 @media (max-width: 600px) {
 .botao {
