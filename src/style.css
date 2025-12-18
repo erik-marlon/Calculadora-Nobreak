@@ -32,6 +32,18 @@ label {
     align-items: center;
     margin-bottom: 5px;
 }
+.resultado {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+    margin-left: 25px;
+}
+
+.animar {
+    opacity: 0;
+    transform: translateY(12px);
+    animation: aparecer 0.5s ease-out forwards;
+}
 .input-div {
     width: 150px;
     max-width: 400px;
@@ -101,5 +113,11 @@ label {
         cursor: pointer;
         z-index: 1000;
         box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    }
+}
+@keyframes aparecer {
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
